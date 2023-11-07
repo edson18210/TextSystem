@@ -9,8 +9,8 @@ void CreateAndWrite(char text[]) {
 }
 
 int main() {
-    char userText[50];
+    char userText[100];
     printf("Ola, digite um texto.\n");
-    fgets(userText, 300, stdin);
+    fgets(userText, sizeof(userText), stdin);
     CreateAndWrite(userText);
 }
